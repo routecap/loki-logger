@@ -1,6 +1,6 @@
 {
   "name": "loki-logger",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "winston logger configuration for loki",
   "main": "index.js",
   "scripts": {

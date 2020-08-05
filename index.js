@@ -3,7 +3,10 @@ const { format, transports, createLogger } = winston;
 const { timestamp, colorize, printf, errors } = format;
 const { Console } = transports;
 
+const DEBUG = (process.env.DEBUG === 'true')
+
 const winstonOptions = {
+    ...(DEBUG ? {level: 'debug'} : {}),
     exitOnError: false,
     colorize: false,
     transports: [
